@@ -11,5 +11,9 @@ class StudentsController < ApplicationController
   def new 
     
   end
+  
+  def create
+    Student.create(params[:first_name], params[:last_name])
+  end
 
 end
